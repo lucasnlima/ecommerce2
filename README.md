@@ -25,13 +25,13 @@ mvn run
 
 A API estará disponível na porta 8080. As operações de CRUD para lojas e categorias podem ser acessadas nas seguintes rotas:
 
-- **/shop:** operações de CRUD para lojas
-- **/category:** operações de CRUD para categorias
+- **/shops:** operações de CRUD para lojas
+- **/categories:** operações de CRUD para categorias
 
 Além disso, é possível filtrar lojas por categoria e categorias por loja nas seguintes rotas:
 
-- **/shop?category={categoryName}:** lista as lojas que possuem a categoria com o nome especificado
-- **/category?shopId={shopId}:** lista as categorias associadas à loja com o ID especificado
+- **/shops?category={categoryName}:** lista as lojas que possuem a categoria com o nome especificado
+- **/categories?shopId={shopId}:** lista as categorias associadas à loja com o ID especificado
 
 ## Testes
 ---------
