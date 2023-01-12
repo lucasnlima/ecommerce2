@@ -65,6 +65,7 @@ public class ShopController {
             shop.get().setDescription(shopInput.getDescription());
             shop.get().setColor(shopInput.getColor());
             shop.get().setImgUrl(shopInput.getImgUrl());
+            shop.get().setEnable(shopInput.isEnable());
             return HttpResponse.ok(shopRepository.update(shop.get()));
         }else {
             return HttpResponse.notFound();
@@ -72,7 +73,7 @@ public class ShopController {
 
     }
 
-    @Patch("/{id}")
+    @Patch("/{id}/addCategory")
     public Shop addCategoryToShop(@QueryValue long id, @Body Long categoryId){
         Shop shop = shopRepository.findById(id).orElseThrow();
         Category category = categoryRepository.findById(categoryId).orElseThrow();

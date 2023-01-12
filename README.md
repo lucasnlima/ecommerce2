@@ -35,6 +35,15 @@ Além disso, é possível filtrar lojas por categoria e categorias por loja nas 
 
 ## Testes
 ---------
+
+Para rodar os teste é preciso apenas executar o comando abaixo.
+
+~~~~
+mvn test
+~~~~
+
+Existe uma collecction de requisições na raiz que pode ser usada para importar alguns requests de teste para o postman.
+Ecommerce.postman_collection.json
 ## Detalhes
 ---------
 

@@ -1,7 +1,6 @@
 package com.study.controller;
 
 import java.util.Optional;
-
 import com.study.domain.Category;
 import com.study.repository.CategoryRepository;
 import io.micronaut.http.HttpResponse;
@@ -15,7 +14,7 @@ import io.micronaut.http.annotation.QueryValue;
 import io.micronaut.validation.Validated;
 import jakarta.inject.Inject;
 
-@Controller("/category")
+@Controller("/categories")
 @Validated
 public class CategoryController {
     
